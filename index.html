@@ -575,6 +575,7 @@
     const openBtn = document.getElementById('openOverlay');
     const closeBtn = document.getElementById('closeOverlay');
     const overlay = document.getElementById('overlay');
+    const links = document.querySelectorAll('a');
 
     openBtn.addEventListener('click', () => {
       overlay.classList.add('active');
@@ -582,6 +583,12 @@
 
     closeBtn.addEventListener('click', () => {
       overlay.classList.remove('active');
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        overlay.classList.remove('active');
+      });
     });
   </script>
 </body>
