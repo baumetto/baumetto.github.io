@@ -130,7 +130,8 @@
         flex-direction: column;
       }
       nav.sidebar {
-        position: relative;
+        position: fixed;
+        top: 0;
         width: 100%;
         height: auto;
         flex-direction: row;
@@ -141,6 +142,62 @@
         margin: 0 15px;
         white-space: nowrap;
       }
+      .mobile-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: green;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 1000;
+    }
+
+    .mobile-nav button {
+      position: absolute;
+      right: 60px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      color: #fff;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      transition: opacity 0.3s ease;
+    }
+
+    .overlay.active {
+      display: flex;
+    }
+
+    .overlay button {
+      background: none;
+      border: 2px solid green;
+      padding: 10px 20px;
+      color: green;
+      cursor: pointer;
+      margin-top: 20px;
+      float: right;
+      border-radius: 12px;
+    }
+
       main.content {
         margin-left: 0;
         padding: 20px 15px;
@@ -168,6 +225,27 @@
     <a href="#skills">Skills</a>
     <a href="#languages">Languages</a>
   </nav>
+
+  <div class="mobile-nav">
+    <button id="openOverlay">☰</button>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <a href="#top">Top</a>
+    <a href="#welcome">Welcome! 🤝</a>
+    <a href="#summary">About Me</a>
+    <!-- <a href="#experience">Experience</a> -->
+    <a href="#products">Released Products</a>
+    <a href="#projects">European Projects</a>
+    <a href="#awards">Awards 🥇</a>
+    <a href="#publications">Publications</a>
+    <a href="#patents">Patents</a>
+    <a href="#conferences">Conferences</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#languages">Languages</a>
+    <button id="closeOverlay">Close</button>
+  </div>
 
   <main class="content">
 
@@ -493,5 +571,18 @@
 
   </main>
 
+  <script>
+    const openBtn = document.getElementById('openOverlay');
+    const closeBtn = document.getElementById('closeOverlay');
+    const overlay = document.getElementById('overlay');
+
+    openBtn.addEventListener('click', () => {
+      overlay.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      overlay.classList.remove('active');
+    });
+  </script>
 </body>
 </html>
