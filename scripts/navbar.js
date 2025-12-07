@@ -1,6 +1,6 @@
-function openSubmenu(className) {
+function openSubmenu(className, context) {
   const submenu = document.getElementById(className);
-  const menuIcons = document.getElementsByClassName("dropdown-icon");
+  const menuIcons = document.getElementsByClassName(`${context}-dropdown-icon`);
 
   if (submenu.classList.contains("hidden")) {
     submenu.classList.remove("hidden");

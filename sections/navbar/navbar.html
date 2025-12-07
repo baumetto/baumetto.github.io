@@ -7,26 +7,28 @@
     <div class="achievements-container">
       <button
         class="navbar-item achievements-button"
-        onclick="openSubmenu('achievements-submenu')"
+        onclick="openSubmenu('achievements-submenu', 'achievements')"
       >
         Achievements
-        <i class="dropdown-icon fa fa-angle-right"></i>
-        <i class="dropdown-icon hidden fa fa-angle-down"></i>
-        <div id="achievements-submenu" class="achievements-submenu hidden">
-          <button data-page="achievements#section1">Awards</button>
-          <button data-page="achievements#section2">Publications</button>
-          <button data-page="achievements#section3">Patents</button>
-          <button data-page="achievements#section4">Conferences</button>
-        </div>
+        <i class="achievements-dropdown-icon fa fa-angle-right"></i>
+        <i class="achievements-dropdown-icon hidden fa fa-angle-down"></i>
       </button>
+      <div id="achievements-submenu" class="achievements-submenu hidden">
+        <button data-page="achievements#section1">Awards</button>
+        <button data-page="achievements#section2">Publications</button>
+        <button data-page="achievements#section3">Patents</button>
+        <button data-page="achievements#section4">Conferences</button>
+      </div>
     </div>
 
     <div class="education-container">
       <button
         class="navbar-item education-button"
-        onclick="openSubmenu('education-submenu')"
+        onclick="openSubmenu('education-submenu', 'education')"
       >
         Education
+        <i class="education-dropdown-icon fa fa-angle-right"></i>
+        <i class="education-dropdown-icon hidden fa fa-angle-down"></i>
       </button>
       <div id="education-submenu" class="education-submenu hidden">
         <button data-page="education#section1">Education</button>
