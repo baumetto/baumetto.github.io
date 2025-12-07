@@ -1,0 +1,30 @@
+.bold {
+  font-weight: bold;
+}
+
+.awards-title,
+.publications-title,
+.patents-title,
+.conferences-title {
+  border-bottom: 2px solid darkgreen;
+}
+
+.released-project-description,
+.projects-project-description {
+  text-align: justify;
+}
+
+@media (min-width: 1024px) {
+  .awards-title,
+  .publications-title,
+  .patents-title,
+  .conferences-title {
+    font-size: 2rem;
+    color: darkgreen;
+  }
+
+  .released-project-title,
+  .projects-project-title {
+    font-weight: bold;
+  }
+}
