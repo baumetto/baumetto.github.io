@@ -1,0 +1,70 @@
+.welcome-title {
+    border-bottom: 2px solid darkgreen;
+}
+
+.about-title {
+    border-bottom: 2px solid darkgreen;
+}
+
+@media (min-width: 1024px) {
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+        padding: 4rem 8rem;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .personal-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .picture {
+        background-color: black;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background-image: url('/assets/images/HiPEAC26_HD.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid darkgreen;
+    }
+
+    .personal-info ul {
+        display: flex;
+        gap: 15px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .welcome-title {
+        font-size: 3rem;
+        color: darkgreen;
+    }
+    
+    .welcome-content {
+        text-align: justify;
+    }
+
+    .about-title {
+        font-size: 2rem;
+        color: darkgreen;
+    }
+
+    .about-content {
+        line-height: 1.6;
+        text-align: justify;
+    }
+}
