@@ -1,0 +1,26 @@
+.bold {
+  font-weight: bold;
+}
+
+.released-title,
+.projects-title {
+  border-bottom: 2px solid darkgreen;
+}
+
+.released-project-description,
+.projects-project-description {
+  text-align: justify;
+}
+
+@media (min-width: 1024px) {
+  .released-title,
+  .projects-title {
+    font-size: 2rem;
+    color: darkgreen;
+  }
+
+  .released-project-title,
+  .projects-project-title {
+    font-weight: bold;
+  }
+}

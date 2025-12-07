@@ -3,12 +3,36 @@
     <a class="navbar-item" onclick="loadPage('home')">Home</a>
   </div>
   <div class="navbar-right">
-    <!-- da raggruppare in un'unica pagina --> 
-    <a class="navbar-item" onclick="loadPage('projects')">Projects</a>
-    <!-- da raggruppare in un'unica pagina --> 
-    <a class="navbar-item" onclick="loadPage('achievements')">Achievements</a>
-    <!-- da raggruppare in un'unica pagina --> 
-    <a class="navbar-item" onclick="loadPage('education')">Education</a>
+    <button class="navbar-item" onclick="loadPage('projects')">Projects</button>
+    <div class="achievements-container">
+      <button
+        class="navbar-item achievements-button"
+        onclick="openSubmenu('achievements-submenu')"
+      >
+        Achievements
+        <i class="dropdown-icon fa fa-angle-right"></i>
+        <i class="dropdown-icon hidden fa fa-angle-down"></i>
+        <div id="achievements-submenu" class="achievements-submenu hidden">
+          <button data-page="achievements#section1">Awards</button>
+          <button data-page="achievements#section2">Publications</button>
+          <button data-page="achievements#section3">Patents</button>
+          <button data-page="achievements#section4">Conferences</button>
+        </div>
+      </button>
+    </div>
 
+    <div class="education-container">
+      <button
+        class="navbar-item education-button"
+        onclick="openSubmenu('education-submenu')"
+      >
+        Education
+      </button>
+      <div id="education-submenu" class="education-submenu hidden">
+        <button data-page="education#section1">Education</button>
+        <button data-page="education#section2">Skills</button>
+        <button data-page="education#section3">Languages</button>
+      </div>
+    </div>
   </div>
 </div>

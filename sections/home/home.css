@@ -1,8 +1,4 @@
-.welcome-title {
-    border-bottom: 2px solid darkgreen;
-}
-
-.about-title {
+.welcome-title, .about-title {
     border-bottom: 2px solid darkgreen;
 }
 
@@ -13,7 +9,6 @@
         align-items: center;
         justify-content: space-between;
         gap: 4rem;
-        padding: 4rem 8rem;
     }
 
     .header {
@@ -59,8 +54,15 @@
         padding: 0;
     }
 
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     .welcome-title {
         font-size: 3rem;
+        margin-bottom: 0.5rem;
         color: darkgreen;
     }
     
