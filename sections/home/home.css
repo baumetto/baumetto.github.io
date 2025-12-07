@@ -23,10 +23,20 @@
         width: 100%;
     }
 
+    .name {
+        font-size: 4rem;
+        color: darkgreen;
+    }
+
     .personal-info {
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 
     .picture {
