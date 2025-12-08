@@ -4,16 +4,16 @@
   </div>
   <div class="navbar-right">
     <button class="navbar-item" onclick="loadPage('projects')">Projects</button>
-    <div class="achievements-container">
+    <div class="achievements-nav-container">
       <button
         class="navbar-item achievements-button"
-        onclick="openSubmenu('achievements-submenu', 'achievements')"
+        onclick="openSubmenu('achievements-nav-submenu', 'achievements-nav')"
       >
         Achievements
-        <i class="achievements-dropdown-icon fa fa-angle-right"></i>
-        <i class="achievements-dropdown-icon hidden fa fa-angle-down"></i>
+        <i class="achievements-nav-dropdown-icon fa fa-angle-right"></i>
+        <i class="achievements-nav-dropdown-icon hidden fa fa-angle-down"></i>
       </button>
-      <div id="achievements-submenu" class="achievements-submenu hidden">
+      <div id="achievements-nav-submenu" class="achievements-submenu hidden">
         <button onclick="loadPage('achievements#awards')">Awards</button>
         <button onclick="loadPage('achievements#publications')">Publications</button>
         <button onclick="loadPage('achievements#patents')">Patents</button>
@@ -21,16 +21,16 @@
       </div>
     </div>
 
-    <div class="education-container">
+    <div class="education-nav-container">
       <button
         class="navbar-item education-button"
-        onclick="openSubmenu('education-submenu', 'education')"
+        onclick="openSubmenu('education-nav-submenu', 'education-nav')"
       >
         Education
-        <i class="education-dropdown-icon fa fa-angle-right"></i>
-        <i class="education-dropdown-icon hidden fa fa-angle-down"></i>
+        <i class="education-nav-dropdown-icon fa fa-angle-right"></i>
+        <i class="education-nav-dropdown-icon hidden fa fa-angle-down"></i>
       </button>
-      <div id="education-submenu" class="education-submenu hidden">
+      <div id="education-nav-submenu" class="education-submenu hidden">
         <button onclick="loadPage('education#education')">Education</button>
         <button onclick="loadPage('education#skills')">Skills</button>
         <button onclick="loadPage('education#languages')">Languages</button>
