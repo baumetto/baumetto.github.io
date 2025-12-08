@@ -1,0 +1,15 @@
+
+.education-title,
+.skills-title,
+.languages-title {
+  border-bottom: 2px solid darkgreen;
+}
+
+@media (min-width: 1024px) {
+  .education-title,
+  .skills-title,
+  .languages-title {
+    font-size: 2rem;
+    color: darkgreen;
+  }
+}
