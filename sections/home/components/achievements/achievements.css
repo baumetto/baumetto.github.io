@@ -1,3 +1,4 @@
+
 .awards-title,
 .publications-title,
 .patents-title,
@@ -18,9 +19,35 @@
     font-size: 2rem;
     color: darkgreen;
   }
-
+  
   .released-project-title,
   .projects-project-title {
     font-weight: bold;
+  }
+  
+  .awards-list {
+    padding-left: 1.2rem;
+  }
+  
+  .awards-list li::marker {
+    color: darkgreen;
+  }
+
+  .awards-sublist li::marker {
+    color: black;
+  }
+
+  .awards-subtitle {
+    font-weight: bold;
+    color: darkgreen;
+  }
+
+  .awards-item-title {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .awards-item-content {
+    margin-top: 0.2rem;
   }
 }
